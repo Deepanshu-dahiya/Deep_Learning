@@ -1,1 +1,67 @@
-dfd
+1.
+Question 1
+What does a neuron compute?
+Answer    A neuron computes a linear function (z = Wx + b) followed by an activation function
+2.
+Question 2
+Which of these is the "Logistic Loss"?
+Answer      {L}^{(i)}(\hat{y}^{(i)}, y^{(i)}) = -( y^{(i)}\log(\hat{y}^{(i)}) + (1- y^{(i)})\log(1-\hat{y}^{(i)})
+3.
+Question 3
+Suppose img is a (32,32,3) array, representing a 32x32 image with 3 color channels red, green and blue. How do you reshape this into a column vector?
+Answer      x = img.reshape((32*32*3,1))
+
+4.
+Question 4
+Consider the two following random arrays "a" and "b":
+Answer    c.shape = (2, 3)
+
+5.
+Question 5
+Consider the two following random arrays "a" and "b":
+Answer    The computation cannot happen because the sizes don't match. It's going to be "Error"!
+
+6.
+Question 6
+Suppose you have n_xn  x input features per example. Recall that X = [x^{(1)} x^{(2)} ... x^{(m)}]X=[x (1)x (2)...x (m)]. What is the dimension of X?
+Answer    (nx,m)
+
+Question 7
+Recall that "np.dot(a,b)" performs a matrix multiplication on a and b, whereas "a*b" performs an element-wise multiplication.
+
+Consider the two following random arrays "a" and "b":
+
+
+What is the shape of c?
+Answer    c.shape = (12288, 45)
+
+
+
+8.
+Question 8
+Consider the following code snippet:
+
+
+How do you vectorize this?
+
+Answer    c = a + b.T
+
+
+
+9.
+Question 9
+Consider the following code:
+
+
+What will be c? (If you’re not sure, feel free to run this in python to find out).
+Answer      This will invoke broadcasting, so b is copied three times to become (3,3), and *∗ is an element-wise product so c.shape will be (3, 3)
+
+
+10.
+Question 10
+Consider the following computation graph.
+
+
+What is the output J?
+
+Answer    J = (a - 1) * (b + c)
